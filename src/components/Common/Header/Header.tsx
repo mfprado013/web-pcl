@@ -3,14 +3,11 @@ import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { classNames } from '@/utils/helper';
 
-const navigation = [
-  { name: 'Inicio', href: '#', current: true },
-  { name: 'Sobre', href: '#', current: false },
-  { name: 'Portifólio', href: '#', current: false },
-  { name: 'Contato', href: '#', current: false }
-];
-
-export default function Header() {
+export default function Header({
+  navigation
+}: {
+  navigation: { name: string; href: string; current: boolean }[];
+}) {
   return (
     <>
       <div className='min-h-full'>
@@ -51,7 +48,7 @@ export default function Header() {
                   {/* mobile */}
                   <div className='-mr-2 flex md:hidden'>
                     {/* Mobile menu button */}
-                    <Disclosure.Button className='inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800'>
+                    <Disclosure.Button className='inline-flex items-center justify-center rounded-md bg-cinza-700 p-2 text-cinza-300 hover:bg-cinza-600  hover:text-cinza-50 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-cinza-800'>
                       <span className='sr-only'>Open main menu</span>
                       {open ? (
                         <XMarkIcon className='block h-6 w-6' aria-hidden='true' />
