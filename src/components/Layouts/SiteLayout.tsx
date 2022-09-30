@@ -29,6 +29,7 @@ const pageTransition = {
 interface Props {
   withHeader?: boolean;
   withFooter?: boolean;
+  navigation: { name: string; href: string; current: boolean }[];
   fullTitle?: string;
   title: string;
   description?: string;
@@ -41,6 +42,7 @@ interface Props {
 const SiteLayout = ({
   withHeader,
   withFooter,
+  navigation,
   fullTitle,
   title,
   description,
@@ -72,7 +74,7 @@ const SiteLayout = ({
         <title>{pageTitle}</title>
       </Head>
 
-      {withHeader && <Header />}
+      {withHeader && <Header navigation={navigation} />}
       <main className='flex-grow w-full'>
         {/* <Toaster /> */}
         <div {...props}>{children}</div>
