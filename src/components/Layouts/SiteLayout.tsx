@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Footer from '../Common/Footer/Footer';
 import Header from '../Common/Header/Header';
 
+import picture from '@/assets/images/picture01.webp';
+
 const pageVariants = {
   initial: {
     opacity: 0,
@@ -55,7 +57,7 @@ const SiteLayout = ({
   const defaultTitle = fullTitle ? fullTitle + title : `${title} - pontocerto`;
   const pageTitle = fullTitle ? fullTitle : defaultTitle;
   const pageDescription = description;
-  const pageImage = ogImage;
+  const pageImage = ogImage ? ogImage : picture.src;
 
   return (
     <div className='flex flex-col min-h-screen bg-gray-50'>
