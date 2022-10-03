@@ -13,7 +13,7 @@ export default function About() {
       <SiteLayout title='sobre nós' withHeader withFooter navigation={navigation}>
         <main className='relative max-w-7xl mx-auto'>
           <div>
-            <h1>sobre a empresa</h1>
+            <h1>sobre</h1>
           </div>
         </main>
       </SiteLayout>
