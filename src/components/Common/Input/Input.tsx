@@ -1,104 +1,34 @@
-import { ChangeEvent, FocusEvent, forwardRef, useCallback, useState } from 'react';
+import { forwardRef } from 'react';
+import { IInput } from './types';
 
-interface IInputProps {
-  type?: 'text' | 'number' | 'password';
-  error?: string;
-  className?: string;
-  containerClassName?: string;
-  onFocus?: (e: FocusEvent<HTMLInputElement>) => {};
-  onBlur?: (e: FocusEvent<HTMLInputElement>) => {};
-  onChange?: (e: ChangeEvent<HTMLInputElement>) => {};
-}
-
-const Input: React.ForwardRefRenderFunction<HTMLInputElement, IInputProps> = (
-  {
-    type = 'text',
-    error,
-    className,
-    containerClassName = '',
-    onFocus,
-    onBlur,
-    onChange,
-    ...rest
-  },
+const Input: React.ForwardRefRenderFunction<HTMLInputElement, IInput> = (
+  { id, name, type = 'text', title, register, error, value, ...props },
   ref
 ) => {
-  const [showPassword, setShowPassword] = useState<boolean>(false);
-  const [formType, setFormType] = useState<'text' | 'password' | 'email' | 'number'>(
-    type
-  );
-  const [isFocused, setIsFocused] = useState<boolean>(false);
-
-  const handleToggleShowPassword = useCallback(() => {
-    showPassword ? setFormType('password') : setFormType('text');
-    setShowPassword(!showPassword);
-  }, [showPassword]);
-
-  const handleFocusInput = useCallback(
-    (e: FocusEvent<HTMLInputElement>) => {
-      setIsFocused(true);
-      onFocus && onFocus(e);
-    },
-    [onFocus]
-  );
-
-  const handleBlurInput = useCallback(
-    (e: FocusEvent<HTMLInputElement>) => {
-      setIsFocused(false);
-      onBlur && onBlur(e);
-    },
-    [onBlur]
-  );
-
-  const onChangeInput = useCallback(
-    (e: ChangeEvent<HTMLInputElement>) => {
-      onChange && onChange(e);
-    },
-    [onChange]
-  );
-
   return (
-    <div className='flex-1'>
-      <label
-        className={`flex justify-center items-center ${
-          isFocused ? 'bg-gray-100' : 'bg-white'
-        } h-14 p-5 ${
-          isFocused ? 'border border-primary' : 'border border-black'
-        } rounded-lg ${containerClassName}`}
-      >
-        <input
-          className='flex-1 border-0 w-full bg-transparent font-app-regular text-gray filter-none outline-none'
-          autoComplete='off'
-          autoCorrect='off'
-          spellCheck='false'
-          autoCapitalize='none'
-          type={formType}
-          ref={ref}
-          {...rest}
-          onFocus={(e) => handleFocusInput(e)}
-          onBlur={handleBlurInput}
-          onChange={onChangeInput}
-          formNoValidate
-        />
-        {type === 'password' ? (
-          showPassword ? (
-            <>ver</>
-          ) : (
-            <>fechar</>
-          )
-        ) : //   <IonIcon
-        //     className='text-2xl pl-2 cursor-pointer'
-        //     icon={showPassword ? eyeOpenIcon : eyeClosedIcon}
-        //     color='primary'
-        //     placeholder='Mostrar senha'
-        //     onClick={handleToggleShowPassword}
-        //   />
-        null}
-      </label>
-      <span className='min-h-6 mb-6 font-app-regular text-primary block'>
+    <>
+      <div className='flex-1'>
+        <label htmlFor={name} className='font-medium text-cinza-700'>
+          {title}
+        </label>
+        <div className='relative'>
+          <input
+            {...register}
+            data-testid={name}
+            name={name}
+            id={id}
+            type={type}
+            defaultValue={value}
+            {...props}
+            ref={ref}
+            className='block w-full rounded-sm shadow-sm text-md px-3 py-2 bg-gray-50 text-gray-800 border-none border-cinza-600 border-2'
+          />
+        </div>
+      </div>
+      <span className='min-h-6 mb-6 font-app-regular text-md text-primary block text-red-500'>
         {error ? `* ${error}` : ''}
       </span>
-    </div>
+    </>
   );
 };
 
