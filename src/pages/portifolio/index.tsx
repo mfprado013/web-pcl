@@ -1,7 +1,7 @@
 import { SiteLayout } from '@/components/Layouts';
-import PortifolioAgricola from '@/components/Pages/Home/Carousel/PortifolioAgricola';
-import PortifolioLimpeza from '@/components/Pages/Home/Carousel/PortifolioLimpeza';
-import PortifolioLocação from '@/components/Pages/Home/Carousel/PortifolioLocação';
+import PortifolioAgricola from '@/components/Pages/Portifolio/PortifolioAgricola';
+import PortifolioLimpeza from '@/components/Pages/Portifolio/PortifolioLimpeza';
+import PortifolioLocação from '@/components/Pages/Portifolio/PortifolioLocação';
 
 const navigation = [
   { name: 'Inicio', href: '/', current: false },
