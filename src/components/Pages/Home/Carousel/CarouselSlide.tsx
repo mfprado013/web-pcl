@@ -16,14 +16,14 @@ export default function CarouselSlide() {
     <Slider {...settings}>
       <div>
         <img
-          className='z-0 relative h-[720px] w-full object-cover opacity-90'
+          className='z-0 h-[720px] w-full object-cover opacity-90'
           src={BgTeste.src}
           alt=''
         />
       </div>
       <div>
         <img
-          className='z-0 relative h-[720px] w-full object-cover opacity-90'
+          className='z-0 h-[720px] w-full object-cover opacity-90'
           src={BgTeste.src}
           alt=''
         />

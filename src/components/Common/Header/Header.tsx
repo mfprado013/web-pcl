@@ -3,6 +3,8 @@ import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { classNames } from '@/utils/helper';
 
+import lightLogo from '@/assets/images/logo_light.svg';
+
 export default function Header({
   navigation
 }: {
@@ -18,9 +20,9 @@ export default function Header({
                 <div className='flex h-16 items-center justify-between'>
                   <div className='flex-shrink-0'>
                     <img
-                      className='h-8 w-8'
-                      src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500'
-                      alt='Your Company'
+                      className='h-10 w-10'
+                      src={lightLogo.src}
+                      alt='ponto_certo_locacoes'
                     />
                   </div>
                   <div className='flex items-center'>
