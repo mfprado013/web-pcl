@@ -1,4 +1,8 @@
 import { SiteLayout } from '@/components/Layouts';
+import Image from 'next/image';
+import Pc01 from '@/assets/images/about/pt79.jpeg';
+import Pc02 from '@/assets/images/about/pt25.jpeg';
+import Pc03 from '@/assets/images/about/pt3.jpeg';
 
 const navigation = [
   { name: 'Inicio', href: '/', current: false },
@@ -18,19 +22,22 @@ export default function About() {
                 <div className='grid grid-cols-1 items-center gap-y-16 gap-x-8 lg:grid-cols-2'>
                   <div>
                     <div className='border-b border-gray-200 pb-10'>
-                      <h2 className='font-medium text-gray-500'>Machined Kettle</h2>
-                      <p className='mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
-                        Elegant simplicity
-                      </p>
+                      <h1 className='mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
+                        Sobre nós
+                      </h1>
+                      <div>
+                        <h2 className='tex-md font-normal text-gray-600'>
+                          Somos uma empresa prestadora de serviços, onde alocamos maquinas para serviços aquaticos, maquinas para serviços de trabalho em alturas, maquinas para serviços agricolas 
+                        </h2>
+                      </div>
                     </div>
-
                     <dl className='mt-10 space-y-10'>
                       {features.map((feature) => (
                         <div key={feature.name}>
-                          <dt className='text-sm font-medium text-gray-900'>
+                          <dt className='text-xl font-medium text-gray-900 '>
                             {feature.name}
                           </dt>
-                          <dd className='mt-3 text-sm text-gray-500'>
+                          <dd className='mt-3 text-md text-gray-500'>
                             {feature.description}
                           </dd>
                         </div>
@@ -39,27 +46,15 @@ export default function About() {
                   </div>
 
                   <div>
-                    <div className='aspect-w-1 aspect-h-1 overflow-hidden rounded-lg bg-gray-100'>
-                      <img
-                        src='https://tailwindui.com/img/ecommerce-images/product-feature-09-main-detail.jpg'
-                        alt='Black kettle with long pour spot and angled body on marble counter next to coffee mug and pour-over system.'
-                        className='h-full w-full object-cover object-center'
-                      />
+                    <div className='aspect-w-1 aspect-h-1 overflow-hidden rounded-xl'>
+                      <Image src={Pc01.src} width={600} height={700} />
                     </div>
                     <div className='mt-4 grid grid-cols-2 gap-4 sm:mt-6 sm:gap-6 lg:mt-8 lg:gap-8'>
-                      <div className='aspect-w-1 aspect-h-1 overflow-hidden rounded-lg bg-gray-100'>
-                        <img
-                          src='https://tailwindui.com/img/ecommerce-images/product-feature-09-detail-01.jpg'
-                          alt='Detail of temperature setting button on kettle bass with digital degree readout.'
-                          className='h-full w-full object-cover object-center'
-                        />
+                      <div className='aspect-w-1 aspect-h-1 overflow-hidden rounded-xl'>
+                        <Image src={Pc02.src} width={600} height={700} />
                       </div>
-                      <div className='aspect-w-1 aspect-h-1 overflow-hidden rounded-lg bg-gray-100'>
-                        <img
-                          src='https://tailwindui.com/img/ecommerce-images/product-feature-09-detail-02.jpg'
-                          alt='Kettle spout pouring boiling water into coffee grounds in pour-over mug.'
-                          className='h-full w-full object-cover object-center'
-                        />
+                      <div className='aspect-w-1 aspect-h-1 overflow-hidden rounded-xl'>
+                        <Image src={Pc03.src} width={600} height={700} />
                       </div>
                     </div>
                   </div>
@@ -75,22 +70,18 @@ export default function About() {
 
 const features = [
   {
-    name: 'Sleek design',
+    name: 'Serviço de Locações',
     description:
-      'The machined kettle has a smooth black finish and contemporary shape that stands apart from most plastic appliances.'
+      'Alocamos guindadeste, caminhão munck, para todos os serviços que o cliente precisar'
   },
   {
-    name: 'Comfort handle',
-    description: 'Shaped for steady pours and insulated to prevent burns.'
+    name: 'Serviço de Limpeza',
+    description:
+      'Alocamos bancos, retroescavadeiras, guindadeste, para serviços de limpezas em rios'
   },
   {
-    name: 'One-button control',
+    name: 'Serviços Agricolas',
     description:
       'The one button control has a digital readout for setting temperature and turning the kettle on and off.'
-  },
-  {
-    name: 'Long spout',
-    description:
-      "Designed specifically for controlled pour-overs that don't slash or sputter."
   }
 ];
