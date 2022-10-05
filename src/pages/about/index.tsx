@@ -82,6 +82,6 @@ const features = [
   {
     name: 'Serviços Agricolas',
     description:
-      'The one button control has a digital readout for setting temperature and turning the kettle on and off.'
+      'serviços agricolas'
   }
 ];
