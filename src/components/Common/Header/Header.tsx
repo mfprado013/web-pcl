@@ -20,7 +20,7 @@ export default function Header({
                 <div className='flex h-16 items-center justify-between'>
                   <div className='flex-shrink-0'>
                     <img
-                      className='h-10 w-10'
+                      className='h-8 w-8'
                       src={lightLogo.src}
                       alt='ponto_certo_locacoes'
                     />

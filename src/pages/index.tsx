@@ -4,6 +4,7 @@ import CarouselSlide from '@/components/Pages/Home/Carousel/CarouselSlide';
 import malePicture from '@/assets/images/male-worker.png';
 import Link from 'next/link';
 import CompaniesSlides from '@/components/Pages/Home/Carousel/CompaniesSlides';
+import SlideVideos from '@/components/Pages/Home/SlideVideos/SlideVide';
 
 const navigation = [
   { name: 'Inicio', href: '/', current: true },
@@ -18,7 +19,7 @@ export default function Index() {
       <SiteLayout title='home' withFooter withHeader navigation={navigation}>
         <header>
           <div className='max-w-7xl mx-auto '>
-            <div className='absolute z-10 mt-52 md:ml-[100px] lg:ml-[400px]'>
+            <div className='absolute z-10 mt-52 md:ml-[100px] lg:ml-[440px]'>
               <div className='flex flex-col items-center gap-y-4'>
                 <h2 className='text-gray-50 text-2xl md:text-6xl uppercase font-bold'>
                   ponto certo
@@ -33,6 +34,7 @@ export default function Index() {
             </div>
           </div>
           {/* carousel */}
+
           <div className='z-0 relative h-[720px] w-full overflow-hidden object-cover opacity-90'>
             <CarouselSlide />
           </div>
@@ -64,7 +66,19 @@ export default function Index() {
           </div>
         </div>
         {/*  */}
-        <div className='bg-cinza-800 w-full h-52 mb-10'></div>
+        <div className='bg-cinza-800 w-full h-full mb-10'>
+          <div className='max-w-7xl mx-auto  flex justify-center sm:justify-between gap-x-5'>
+            <div className='w-2/5 py-7 hidden sm:flex'>
+              <span className='break-words font-semibold text-4xl text-cinza-50'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+                Praesent libero. Sed cursus ante
+              </span>
+            </div>
+            <div className='py-7 max-w-2xl mx-4 sm:mx-0'>
+              <SlideVideos />
+            </div>
+          </div>
+        </div>
         {/* companies slides */}
         <div className=' max-w-xs sm:max-w-lg md:max-w-3xl  lg:max-w-5xl xl:max-w-7xl mx-auto mt-10'>
           <div className=''>
