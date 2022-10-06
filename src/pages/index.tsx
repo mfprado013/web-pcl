@@ -19,16 +19,23 @@ export default function Index() {
       <SiteLayout title='home' withFooter withHeader navigation={navigation}>
         <header>
           <div className='max-w-7xl mx-auto '>
-            <div className='absolute z-10 mt-52 md:ml-[100px] lg:ml-[440px]'>
+            <div className='absolute z-10 mt-52 md:ml-[100px] lg:ml-[380px]'>
               <div className='flex flex-col items-center gap-y-4'>
                 <h2 className='text-gray-50 text-2xl md:text-6xl uppercase font-bold'>
                   ponto certo
                 </h2>
-                <span className='text-gray-50 text-lg sm:w-30 md:w-[500px] text-center'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-                  odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
-                  quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
-                  mauris.
+                <span className='text-gray-50 text-lg sm:w-30 md:w-[600px] text-center'>
+                  <span className='font-semibold'>
+                    {' '}
+                    A locação de maquinas é a melhor opção para a preservação do capital
+                    da empresa.
+                  </span>
+                  A contratação destes serviços contribui ainda para que a empresa esteja
+                  sempre com os produtos melhores e mais modernos do mercado sem precisar
+                  imobilizar seu capital e ter o desgaste com a manutenção ou reparos
+                  quando necessários. Além disso, pode ser contratado apenas pelo período
+                  de uso do equipamento, sem ter a obrigatoriedade de destinar grandes
+                  espaços para o armazenamento.
                 </span>
               </div>
             </div>
@@ -49,12 +56,12 @@ export default function Index() {
           <div className='flex justify-between mb-10'>
             <div className='pl-10 pt-10 flex flex-col'>
               <h2 className='break-words font-semibold text-4xl text-cinza-600'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
-                Praesent libero. Sed cursus ante{' '}
-                <span className='text-blue-600'>dapibus diam.</span> Sed nisi. Nulla quis
-                sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.
+                A Ponto Certo, empresa constituída em julho de 2018 na cidade de Guariba,
+                estado de São Paulo. Tem como sua principal atividade os{' '}
+                <span className='text-blue-600'>serviços de Alocações</span> de Guindastes
+                , Caminhões Muck, Limpesas de Rios e Serviços Agricolas.
               </h2>
-              <div className='mt-6 mr-5 sm:mr-0'>
+              <div className='mt-6 mr-5 sm:mr-0 z-40'>
                 <Link href='/portifolio'>
                   <a className='bg-blue-600 hover:bg-blue-500 text-gray-50 uppercase font-semibold text-center w-full sm:w-52 px-5 py-3 flex justify-center'>
                     saiba mais
@@ -69,9 +76,10 @@ export default function Index() {
         <div className='bg-cinza-800 w-full h-full mb-10'>
           <div className='max-w-7xl mx-auto  flex justify-center sm:justify-between gap-x-5'>
             <div className='w-2/5 py-7 hidden sm:flex'>
-              <span className='break-words font-semibold text-4xl text-cinza-50'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
-                Praesent libero. Sed cursus ante
+              <span className='break-words font-semibold text-4xl text-cinza-50 pt-10'>
+                Bem Vindo! Aqui está um dos nossos principais serviços hoje, limpeza do
+                rio madeira em Porto Velho Rondonia, veja nossos esquipamento e equipe
+                atuando na limpeza
               </span>
             </div>
             <div className='py-7 max-w-2xl mx-4 sm:mx-0'>
