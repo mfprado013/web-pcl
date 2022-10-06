@@ -17,14 +17,6 @@ export default function Portifolio() {
         <main className='relative max-w-7xl mx-auto'>
           <div className='mt-10 px-2'>
             <h1 className='mt-2 text-sm font-semibold tracking-tight text-gray-900 sm:text-3xl'>
-              Serviços Agricolas
-            </h1>
-          </div>
-          <div className='mt-10'>
-            <PortifolioAgricola />
-          </div>
-          <div className='mt-10 px-2'>
-            <h1 className='mt-2 text-sm font-semibold tracking-tight text-gray-900 sm:text-3xl'>
               Serviços de Locações
             </h1>
           </div>
@@ -33,11 +25,19 @@ export default function Portifolio() {
           </div>
           <div className='mt-10 px-2'>
             <h1 className='mt-2 text-sm font-semibold tracking-tight text-gray-900 sm:text-3xl'>
-              Serviços de Limpeza
+              Serviços de Limpeza Serviços Agricolas
             </h1>
           </div>
           <div className='mt-10'>
             <PortifolioLimpeza />
+          </div>
+          <div className='mt-10 px-2'>
+            <h1 className='mt-2 text-sm font-semibold tracking-tight text-gray-900 sm:text-3xl'>
+              Serviços Agricolas
+            </h1>
+          </div>
+          <div className='mt-10'>
+            <PortifolioAgricola />
           </div>
         </main>
       </SiteLayout>
