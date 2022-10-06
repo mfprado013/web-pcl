@@ -12,7 +12,7 @@ export default function Header({
 }) {
   return (
     <>
-      <div className='min-h-full'>
+      <div className='min-h-full z-40'>
         <Disclosure as='nav' className='bg-cinza-800'>
           {({ open }) => (
             <>
