@@ -9,22 +9,26 @@ export default function Info() {
             </h2>
             <div className='mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:col-span-2 lg:mt-0'>
               <div>
-                <h3 className='text-lg font-medium leading-6 text-gray-900'>
-                  Collaborate
-                </h3>
+                <h3 className='text-lg font-medium leading-6 text-gray-900'>Endereço</h3>
                 <dl className='mt-2 text-base text-gray-500'>
                   <div>
-                    <dt className='sr-only'>Email</dt>
-                    <dd>support@example.com</dd>
+                    <dt className='sr-only'>Rua</dt>
+                    <dd>
+                      Rua João Cassimiro, 250
+                      <br />
+                      <span className='font-semibold'>Gov. Mario Covas</span>
+                    </dd>
                   </div>
                   <div className='mt-1'>
-                    <dt className='sr-only'>Phone number</dt>
-                    <dd>+1 (555) 123-4567</dd>
+                    <dt className='sr-only'>cidade</dt>
+                    <dd>
+                      Guariba - SP, <span className='font-semibold'>14840-000</span>
+                    </dd>
                   </div>
                 </dl>
               </div>
               <div>
-                <h3 className='text-lg font-medium leading-6 text-gray-900'>Press</h3>
+                <h3 className='text-lg font-medium leading-6 text-gray-900'>Contatos</h3>
                 <dl className='mt-2 text-base text-gray-500'>
                   <div>
                     <dt className='sr-only'>Email</dt>
@@ -32,7 +36,7 @@ export default function Info() {
                   </div>
                   <div className='mt-1'>
                     <dt className='sr-only'>Phone number</dt>
-                    <dd>+1 (555) 123-4567</dd>
+                    <dd>+55 (16) 0000-0000</dd>
                   </div>
                 </dl>
               </div>
@@ -51,7 +55,7 @@ export default function Info() {
             <div className='flex justify-center col-span-12'>
               <div className='flex flex-row w-full justify-between'>
                 <iframe
-                  src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.8195613507864!3d-6.194741395493371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5390917b759%3A0x6b45e67356080477!2sPT%20Kulkul%20Teknologi%20Internasional!5e0!3m2!1sen!2sid!4v1601138221085!5m2!1sen!2sid'
+                  src='https://maps.google.com/maps?q=Rua%20j%C3%B5ao%20cassimiro,%20250&t=&z=17&ie=UTF8&iwloc=&output=embed'
                   width='720'
                   height='450'
                   frameBorder='0'
