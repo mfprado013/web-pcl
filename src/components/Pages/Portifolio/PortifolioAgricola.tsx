@@ -1,80 +1,100 @@
-import Slider from 'react-slick';
-import Portifolio from '@/assets/images/portifolio/file.png';
+import Portifolioagroone from '@/assets/images/portifolioAgricola/pt62.jpeg';
+import Portifolioagrotwo from '@/assets/images/portifolioAgricola/pt63.jpeg';
+import Portifolioagrothree from '@/assets/images/portifolioAgricola/pt64.jpeg';
+import Portifoliagrofour from '@/assets/images/portifolioAgricola/pt65.jpeg';
+import Portifolioagrofive from '@/assets/images/portifolioAgricola/pt66.jpeg';
+import Portifolioagrosix from '@/assets/images/portifolioAgricola/pt67.jpeg';
+import Portifolioagroseven from '@/assets/images/portifolioAgricola/pt70.jpeg';
+import Portifolioagroeight from '@/assets/images/portifolioAgricola/pt72.jpeg';
+import Portifolioagronine from '@/assets/images/portifolioAgricola/pt73.jpeg';
+import Portifolioagroten from '@/assets/images/portifolioAgricola/pt74.jpeg';
+import Portifolioagroeleven from '@/assets/images/portifolioAgricola/pt79.jpeg';
+import Portifolioagrotwelve from '@/assets/images/portifolioAgricola/pt80.jpeg';
+import Portifolioagrothirteen from '@/assets/images/portifolioAgricola/pt81.jpeg';
 
-var settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 3000,
-  responsive: [
-    {
-      breakpoint: 1350,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 2,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 800,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerMode: true
-      }
-    }
-  ]
-};
 
-export default function PortifolioAgricola() {
+
+
+export default function PortifolioLocação() {
   return (
-    <Slider {...settings}>
-      <div>
+    <div className='flex flex-wrap px-0 sm:px-3'>
+      <div className='gap-x-8 px-2 py-2'>
         <a>
-          <img className='object-cover w-60 h-60' src={Portifolio.src} alt='' />
+          <img className='w-60 h-60' src={Portifolioagroone.src} alt='' />
         </a>
       </div>
       {/* 2 */}
-      <div>
+      <div className='gap-x-8 px-2 py-2'>
         <a>
-          <img className='object-cover w-60 h-60' src={Portifolio.src} alt='' />
+          <img className='w-60 h-60' src={Portifolioagrotwo.src} alt='' />
         </a>
       </div>
       {/* 3 */}
-      <div>
+      <div className='gap-x-8 px-2 py-2'>
         <a>
-          <img className='object-cover w-60 h-60' src={Portifolio.src} alt='' />
+          <img className=' w-60 h-60' src={Portifolioagrothree.src} alt='' />
         </a>
       </div>
       {/* 4 */}
-      <div>
+      <div className='gap-x-8 px-2 py-2'>
         <a>
-          <img className='object-cover w-60 h-60' src={Portifolio.src} alt='' />
+          <img className=' w-60 h-60' src={Portifoliagrofour.src} alt='' />
         </a>
       </div>
       {/* 5 */}
-      <div>
+      <div className='gap-x-8 px-2 py-2'>
         <a>
-          <img className='object-cover w-60 h-60' src={Portifolio.src} alt='' />
+          <img className=' w-60 h-60' src={Portifolioagrofive.src} alt='' />
         </a>
       </div>
       {/* 6 */}
-      <div>
+      <div className='gap-x-8 px-2 py-2'>
         <a>
-          <img className='object-cover w-60 h-60' src={Portifolio.src} alt='' />
+          <img className=' w-60 h-60' src={Portifolioagrosix.src} alt='' />
         </a>
       </div>
-    </Slider>
+      {/* 7 */}
+      <div className='gap-x-8 px-2 py-2'>
+        <a>
+          <img className=' w-60 h-60' src={Portifolioagroseven.src} alt='' />
+        </a>
+      </div>
+      {/* 8 */}
+      <div className='gap-x-8 px-2 py-2'>
+        <a>
+          <img className=' w-60 h-60' src={Portifolioagroeight.src} alt='' />
+        </a>
+      </div>
+      {/* 9 */}
+      <div className='gap-x-8 px-2 py-2'>
+        <a>
+          <img className=' w-60 h-60' src={Portifolioagronine.src} alt='' />
+        </a>
+      </div>
+      {/* 10 */}
+      <div className='gap-x-8 px-2 py-2'>
+        <a>
+          <img className=' w-60 h-60' src={Portifolioagroten.src} alt='' />
+        </a>
+      </div>
+      {/* 11 */}
+      <div className='gap-x-8 px-2 py-2'>
+        <a>
+          <img className=' w-60 h-60' src={Portifolioagroeleven.src} alt='' />
+        </a>
+      </div>
+      {/* 12 */}
+      <div className='gap-x-8 px-2 py-2'>
+        <a>
+          <img className=' w-60 h-60' src={Portifolioagrotwelve.src} alt='' />
+        </a>
+      </div>
+      {/* 13 */}
+      <div className='gap-x-8 px-2 py-2'>
+        <a>
+          <img className=' w-60 h-60' src={Portifolioagrothirteen.src} alt='' />
+        </a>
+      </div>
+    </div>
   );
 }
