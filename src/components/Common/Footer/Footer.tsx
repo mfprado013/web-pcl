@@ -82,7 +82,7 @@ export default function Footer() {
             </div>
           ))}
         </nav>
-        <div className='mt-8 flex justify-center space-x-6'>
+        {/* <div className='mt-8 flex justify-center space-x-6'>
           {footerNavigation.social.map((item) => (
             <a
               key={item.name}
@@ -96,7 +96,7 @@ export default function Footer() {
               />
             </a>
           ))}
-        </div>
+        </div> */}
         <p className='mt-8 text-center text-base text-gray-100'>
           &copy; 2022{' '}
           <span className='font-bold uppercase'>ponto certo locações, ltda. </span>
