@@ -56,7 +56,7 @@ export default function Index() {
           <div className='flex justify-between mb-10'>
             <div className='pl-10 pt-10 flex flex-col'>
               <h2 className='break-words font-semibold text-4xl text-cinza-600'>
-                A Ponto Certo, empresa constituída em julho de 2018 na cidade de Guariba,
+                A Ponto Certo, empresa constituída em julho de 2014 na cidade de Guariba,
                 estado de São Paulo. Tem como sua principal atividade os{' '}
                 <span className='text-blue-600'>serviços de Alocações</span> de Guindastes
                 , Caminhões Muck, Limpesas de Rios e Serviços Agricolas.
