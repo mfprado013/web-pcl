@@ -7,6 +7,7 @@ import { useCallback, useState } from 'react';
 import Textarea from '@/components/Common/Textarea/Textarea';
 
 import { createContact } from '@/services/contact/contact';
+import { toast } from 'react-toastify';
 
 type FormValues = {
   name: string;
@@ -35,10 +36,35 @@ export default function ContactForm() {
 
     await createContact(email, fullname, subject, message)
       .then((res) => {
-        console.log(res);
+        if (res.status === 200) {
+          toast.success('e-mail enviado com sucesso, logo entraremos em contato', {
+            position: 'top-right',
+            autoClose: 3500,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'light'
+          });
+        }
       })
       .catch((error) => {
-        console.log(error);
+        if (error) {
+          toast.error(
+            'houve um erro ao enviar e-mail, confira seus dados ou entre em contato conosco',
+            {
+              position: 'top-right',
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: 'light'
+            }
+          );
+        }
       });
   }, []);
 
@@ -51,8 +77,8 @@ export default function ContactForm() {
             name='name'
             render={({ field: { onChange, ...rest } }) => (
               <Input
-                {...register('name')}
                 title='nome'
+                onChange={onChange}
                 error={errors.name?.message}
                 disabled={loading}
                 placeholder='Jhon'
@@ -62,44 +88,71 @@ export default function ContactForm() {
           />
         </div>
         <div className='w-full'>
-          <Input
-            register={register('last_name')}
-            title='sobrenome'
-            error={errors.last_name?.message}
-            value='ananias'
-            disabled={loading}
-            placeholder='Doe'
+          <Controller
+            control={control}
+            name='last_name'
+            render={({ field: { onChange, ...rest } }) => (
+              <Input
+                {...register('last_name')}
+                title='sobrenome'
+                onChange={onChange}
+                error={errors.last_name?.message}
+                disabled={loading}
+                placeholder='Doe'
+                {...rest}
+              />
+            )}
           />
         </div>
       </div>
       <div className='w-full'>
-        <Input
-          register={register('email')}
-          title='e-mail'
-          error={errors.email?.message}
-          value='abnerndr@gmail.com'
-          disabled={loading}
-          placeholder='johndoe@email.com'
+        <Controller
+          control={control}
+          name='email'
+          render={({ field: { onChange, ...rest } }) => (
+            <Input
+              {...register('email')}
+              type='email'
+              title='e-mail'
+              onChange={onChange}
+              error={errors.email?.message}
+              disabled={loading}
+              placeholder='johndoe@email.com'
+              {...rest}
+            />
+          )}
         />
       </div>
       <div className='w-full'>
-        <Input
-          register={register('subject')}
-          title='titulo da mensagem'
-          error={errors.subject?.message}
-          value='teste'
-          disabled={loading}
-          placeholder='estou lhe contatando pelo motivo de...'
+        <Controller
+          control={control}
+          name='subject'
+          render={({ field: { onChange, ...rest } }) => (
+            <Input
+              title='titulo da mensagem'
+              onChange={onChange}
+              error={errors.subject?.message}
+              disabled={loading}
+              placeholder='estou lhe contatando pelo motivo de...'
+              {...rest}
+            />
+          )}
         />
       </div>
       <div className='w-full'>
-        <Textarea
-          register={register('message')}
-          title='mensagem que desenha enviar'
-          error={errors.message?.message}
-          value='teste'
-          rows={3}
-          disabled={loading}
+        <Controller
+          control={control}
+          name='message'
+          render={({ field: { onChange, ...rest } }) => (
+            <Textarea
+              title='mensagem que desenha enviar'
+              onChange={onChange}
+              error={errors.message?.message}
+              rows={3}
+              disabled={loading}
+              {...rest}
+            />
+          )}
         />
       </div>
       <div className='flex items-center gap-x-5 w-full justify-end text-lg font-semibold '>

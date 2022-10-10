@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Info() {
   return (
     <div className='bg-white'>
@@ -28,23 +30,71 @@ export default function Info() {
                 </dl>
               </div>
               <div>
-                <h3 className='text-lg font-medium leading-6 text-gray-900'>Contatos</h3>
+                <h3 className='text-lg font-medium leading-6 text-gray-900'>
+                  Contato - Oséias
+                </h3>
                 <dl className='mt-2 text-base text-gray-500'>
                   <div>
-                    <dt className='sr-only'>Email</dt>
-                    <dd>support@example.com</dd>
+                    <dt className='sr-only'>email</dt>
+                    <dd>
+                      <Link href='mailto:oseias@pontocertolocacoes.com.br'>
+                        <a>oseias@pontocertolocacoes.com.br</a>
+                      </Link>
+                    </dd>
                   </div>
                   <div className='mt-1'>
                     <dt className='sr-only'>Phone number</dt>
-                    <dd>+55 (16) 0000-0000</dd>
+                    <dd>
+                      <Link href='tel:+5516991457063'>
+                        <a>+55 (16) 99145-7063</a>
+                      </Link>
+                    </dd>
                   </div>
                 </dl>
               </div>
               <div>
-                <h1>facebook</h1>
+                <h3 className='text-lg font-medium leading-6 text-gray-900'>
+                  Contato - Rogério
+                </h3>
+                <dl className='mt-2 text-base text-gray-500'>
+                  <div>
+                    <dt className='sr-only'>email</dt>
+                    <dd>
+                      <Link href='mailto:rogerio@pontocertolocacoes.com.br'>
+                        <a>rogerio@pontocertolocacoes.com.br</a>
+                      </Link>
+                    </dd>
+                  </div>
+                  <div className='mt-1'>
+                    <dt className='sr-only'>Phone number</dt>
+                    <dd>
+                      <Link href='tel:+5516996188384'>
+                        <a>+55 (16) 99618-8384</a>
+                      </Link>
+                    </dd>
+                  </div>
+                </dl>
               </div>
               <div>
-                <h1>instagram</h1>
+                <h3 className='text-lg font-medium leading-6 text-gray-900'>Contato</h3>
+                <dl className='mt-2 text-base text-gray-500'>
+                  <div>
+                    <dt className='sr-only'>email</dt>
+                    <dd>
+                      <Link href='mailto:contato@pontocertolocacoes.com.br'>
+                        <a>contato@pontocertolocacoes.com.br</a>
+                      </Link>
+                    </dd>
+                  </div>
+                  <div className='mt-1'>
+                    <dt className='sr-only'>Phone number</dt>
+                    <dd>
+                      <Link href='tel:+5516996188384'>
+                        <a>+55 (16) 99618-8384</a>
+                      </Link>
+                    </dd>
+                  </div>
+                </dl>
               </div>
             </div>
           </div>
