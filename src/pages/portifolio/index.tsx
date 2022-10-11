@@ -27,7 +27,7 @@ export default function Portifolio() {
               </div>
               <div className='pt-6 px-10'>
                 <h1 className='mt-2 text-sm font-semibold tracking-tight text-gray-900 sm:text-3xl'>
-                  Serviços de Limpeza 
+                  Serviços de Limpeza em rios
                 </h1>
               </div>
               <div className='pt-4 px-6'>
