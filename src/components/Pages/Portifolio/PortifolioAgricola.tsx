@@ -10,57 +10,71 @@ import Portifolioagroten from '@/assets/images/portifolioAgricola/pt74.jpeg';
 import Portifolioagroeleven from '@/assets/images/portifolioAgricola/pt79.jpeg';
 import Portifolioagrotwelve from '@/assets/images/portifolioAgricola/pt80.jpeg';
 import Portifolioagrothirteen from '@/assets/images/portifolioAgricola/pt81.jpeg';
-import Image from 'next/image';
 
 export default function PortifolioLocação() {
   return (
-    <div className='flex flex-wrap px-0 sm:px-3'>
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={Portifolioagroone.src} width={270} height={300} />
-      </div>
-      {/* 3 */}
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={Portifolioagrothree.src} width={270} height={300} />
-      </div>
-      {/* 4 */}
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={Portifoliagrofour.src} width={270} height={300} />
-      </div>
-      {/* 5 */}
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={Portifolioagrofive.src} width={270} height={300} />
+    <div className='flex flex-col gap-y-3'>
+      <div className='flex flex-row gap-x-3'>
+        <div className='object-cover'>
+          <img src={Portifolioagroone.src} className='w-[294px] h-[294px] rounded-sm' />
+        </div>
+        {/* 3 */}
+        <div className='object-cover'>
+          <img src={Portifolioagrothree.src} className='w-[294px] h-[294px] rounded-sm' />
+        </div>
+        {/* 4 */}
+        <div className='object-cover'>
+          <img src={Portifoliagrofour.src} className='w-[294px] h-[294px] rounded-sm' />
+        </div>
+        {/* 5 */}
+        <div className='object-cover'>
+          <img src={Portifolioagrofive.src} className='w-[294px] h-[294px] rounded-sm' />
+        </div>
       </div>
       {/* 6 */}
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={Portifolioagrosix.src} width={270} height={300} />
-      </div>
-      {/* 7 */}
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={Portifolioagroseven.src} width={270} height={300} />
-      </div>
-      {/* 8 */}
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={Portifolioagroeight.src} width={270} height={300} />
-      </div>
-      {/* 9 */}
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={Portifolioagronine.src} width={270} height={300} />
+      <div className='flex flex-row gap-x-3'>
+        <div className='object-cover'>
+          <img src={Portifolioagrosix.src} className='w-[294px] h-[294px] rounded-sm' />
+        </div>
+        {/* 7 */}
+        <div className='object-cover'>
+          <img src={Portifolioagroseven.src} className='w-[294px] h-[294px] rounded-sm' />
+        </div>
+        {/* 8 */}
+        <div className='object-cover'>
+          <img src={Portifolioagroeight.src} className='w-[294px] h-[294px] rounded-sm' />
+        </div>
+        {/* 9 */}
+        <div className='object-cover'>
+          <img src={Portifolioagronine.src} className='w-[294px] h-[294px] rounded-sm' />
+        </div>
       </div>
       {/* 10 */}
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={Portifolioagroten.src} width={270} height={300} />
-      </div>
-      {/* 11 */}
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={Portifolioagroeleven.src} width={270} height={300} />
-      </div>
-      {/* 12 */}
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={Portifolioagrotwelve.src} width={270} height={300} />
-      </div>
-      {/* 13 */}
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={Portifolioagrothirteen.src} width={270} height={300} />
+      <div className='flex flex-row gap-x-3'>
+        <div className='object-cover'>
+          <img src={Portifolioagroten.src} className='w-[294px] h-[294px] rounded-sm' />
+        </div>
+        {/* 11 */}
+        <div className='object-cover'>
+          <img
+            src={Portifolioagroeleven.src}
+            className='w-[294px] h-[294px] rounded-sm'
+          />
+        </div>
+        {/* 12 */}
+        <div className='object-cover'>
+          <img
+            src={Portifolioagrotwelve.src}
+            className='w-[294px] h-[294px] rounded-sm'
+          />
+        </div>
+        {/* 13 */}
+        <div className='object-cover'>
+          <img
+            src={Portifolioagrothirteen.src}
+            className='w-[294px] h-[294px] rounded-sm'
+          />
+        </div>
       </div>
     </div>
   );
