@@ -10,7 +10,8 @@ import Whatsapp from '@/components/Common/Whatsapp/Whatsapp';
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Whatsapp />
+      <ToastContainer />
+      {/* <Whatsapp /> */}
       <Component {...pageProps} />
     </>
   );
