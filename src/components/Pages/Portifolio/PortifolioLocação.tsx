@@ -10,37 +10,41 @@ import Image from 'next/image';
 
 export default function PortifolioLocação() {
   return (
-    <div className='flex flex-wrap px-0 sm:px-3 grid-cols-4 md:grid-cols-3 sm:grid-cols-2'>
-      <div className='gap-x-8 px-2 py-2 object-cover'>
-        <Image src={Portifoliolocaone.src} width={270} height={300} />
+    <div className='flex flex-col gap-y-3'>
+      <div className='flex flex-row gap-x-3'>
+      <div className='object-cover'>
+        <img src={Portifoliolocaone.src} className='w-[294px] h-[294px] rounded-sm'/>
       </div>
       {/* 2 */}
-      <div className='gap-x-8 px-2 py-2 object-cover'>
-        <Image src={Portifoliolocatwo.src} width={270} height={300} />
+      <div className='object-cover'>
+        <img src={Portifoliolocatwo.src} className='w-[294px] h-[294px] rounded-sm' />
       </div>
       {/* 3 */}
-      <div className='gap-x-8 px-2 py-2 object-cover'>
-        <Image src={Portifoliolocathree.src} width={270} height={300} />
+      <div className='object-cover'>
+        <img src={Portifoliolocathree.src} className='w-[294px] h-[294px] rounded-sm' />
       </div>
       {/* 6 */}
-      <div className='gap-x-8 px-2 py-2 object-cover'>
-        <Image src={Portifoliolocasix.src} width={270} height={300} />
+      <div className='object-cover'>
+        <img src={Portifoliolocasix.src} className='w-[294px] h-[294px] rounded-sm'/>
       </div>
+      </div>
+      <div className='flex flex-row gap-x-3'>
       {/* 7 */}
-      <div className='gap-x-8 px-2 py-2 object-cover'>
-        <Image src={Portifoliolocaseven.src} width={270} height={300} />
+      <div className='object-cover'>
+        <img src={Portifoliolocaseven.src} className='w-[294px] h-[294px] rounded-sm' />
       </div>
       {/* 8 */}
-      <div className='gap-x-8 px-2 py-2 object-cover'>
-        <Image src={Portifoliolocaeight.src} width={270} height={300} />
+      <div className='object-cover'>
+        <img src={Portifoliolocaeight.src} className='w-[294px] h-[294px] rounded-sm' />
       </div>
       {/* 9 */}
-      <div className='gap-x-8 px-2 py-2 object-cover'>
-        <Image src={Portifoliolocanine.src} width={270} height={300} />
+      <div className='object-cover'>
+        <img src={Portifoliolocanine.src} className='w-[294px] h-[294px] rounded-sm' />
       </div>
       {/* 10 */}
-      <div className='gap-x-8 px-2 py-2 object-cover'>
-        <Image src={Portifoliolocaten.src} width={270} height={300} />
+      <div className='object-cover'>
+        <img src={Portifoliolocaten.src} className='w-[294px] h-[294px] rounded-sm' />
+      </div>
       </div>
     </div>
   );
