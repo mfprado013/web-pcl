@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <ToastContainer />
-      <Whatsapp />
+      {/* <Whatsapp /> */}
       <Component {...pageProps} />
     </>
   );

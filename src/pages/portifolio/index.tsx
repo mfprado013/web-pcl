@@ -17,11 +17,9 @@ export default function Portifolio() {
         <main className='relative max-w-7xl mx-auto my-32'>
           <div className='bg-white'>
             <div className='mx-auto max-w-2xl py-24 px-4 sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8'>
-              <div className='px-10'>
-                <h1 className='mt-2 text-sm font-semibold tracking-tight text-gray-900 sm:text-3xl sm:tracking-tight'>
+                <h1 className='pl-6 mt-2 text-sm font-semibold tracking-tight text-gray-900 sm:text-3xl sm:tracking-tight'>
                   Serviços de Locações
                 </h1>
-              </div>
               <div className='pt-4 px-6'>
                 <PortifolioLocação />
               </div>
