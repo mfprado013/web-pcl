@@ -17,25 +17,21 @@ export default function Portifolio() {
         <main className='relative max-w-7xl mx-auto my-32'>
           <div className='bg-white'>
             <div className='mx-auto max-w-2xl py-24 px-4 sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8'>
-                <h1 className='pl-6 mt-2 text-sm font-semibold tracking-tight text-gray-900 sm:text-3xl sm:tracking-tight'>
-                  Serviços de Locações
-                </h1>
+              <h1 className='pl-6 mt-2 text-sm font-semibold tracking-tight text-gray-900 sm:text-3xl sm:tracking-tight'>
+                Serviços de Locações
+              </h1>
               <div className='pt-4 px-6'>
                 <PortifolioLocação />
               </div>
-              <div className='pt-6 px-10'>
-                <h1 className='mt-2 text-sm font-semibold tracking-tight text-gray-900 sm:text-3xl'>
-                  Serviços de Limpeza em rios
-                </h1>
-              </div>
+              <h1 className='pl-6 mt-2 text-sm font-semibold tracking-tight text-gray-900 sm:text-3xl'>
+                Serviços de Limpeza em rios
+              </h1>
               <div className='pt-4 px-6'>
                 <PortifolioLimpeza />
               </div>
-              <div className='pt-6 px-10'>
-                <h1 className='mt-2 text-sm font-semibold tracking-tight text-gray-900 sm:text-3xl'>
+                <h1 className='pl-6 mt-2 text-sm font-semibold tracking-tight text-gray-900 sm:text-3xl'>
                   Serviços Agricolas
                 </h1>
-              </div>
               <div className='pt-4 px-6'>
                 <PortifolioAgricola />
               </div>
