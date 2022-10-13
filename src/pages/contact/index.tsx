@@ -1,7 +1,6 @@
 import { SiteLayout } from '@/components/Layouts';
 import ContactForm from '@/components/Pages/Contact/Form/Form';
 import Info from '@/components/Pages/Contact/Info/Info';
-import { ToastContainer } from 'react-toastify';
 
 const navigation = [
   { name: 'Inicio', href: '/', current: false },
@@ -13,7 +12,6 @@ const navigation = [
 export default function Contact() {
   return (
     <>
-      <ToastContainer />
       <SiteLayout title='entre em contato' withHeader withFooter navigation={navigation}>
         <main className='relative max-w-7xl mx-auto my-32'>
           <div>
