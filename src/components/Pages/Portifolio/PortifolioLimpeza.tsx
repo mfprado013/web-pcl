@@ -18,69 +18,107 @@ import Image from 'next/image';
 
 export default function PortifolioLimpeza() {
   return (
-    <div className='flex flex-wrap px-0 sm:px-3'>
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={PortifolioLimpeone.src} width={270} height={300} />
-      </div>
-      {/* 2 */}
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={PortifolioLimpetwo.src} width={270} height={300} />
-      </div>
-      {/* 3 */}
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={PortifolioLimpethree.src} width={270} height={300} />
-      </div>
-      {/* 4 */}
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={PortifolioLimpefour.src} width={270} height={300} />
+    <div className='flex flex-col gap-y-3'>
+      <div className='flex flex-row gap-x-3'>
+        <div className='object-cover'>
+          <img src={PortifolioLimpeone.src} className='w-[294px] h-[294px] rounded-sm' />
+        </div>
+        {/* 2 */}
+        <div className='object-cover'>
+          <img src={PortifolioLimpetwo.src} className='w-[294px] h-[294px] rounded-sm' />
+        </div>
+        {/* 3 */}
+        <div className='object-cover'>
+          <img
+            src={PortifolioLimpethree.src}
+            className='w-[294px] h-[294px] rounded-sm'
+          />
+        </div>
+        {/* 4 */}
+        <div className='object-cover'>
+          <img src={PortifolioLimpefour.src} className='w-[294px] h-[294px] rounded-sm' />
+        </div>
       </div>
       {/* 6 */}
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={PortifolioLimpesix.src} width={270} height={300} />
-      </div>
-      {/* 7 */}
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={PortifolioLimpeseven.src} width={270} height={300} />
-      </div>   
-      {/* 9 */}
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={PortifolioLimpenine.src} width={270} height={300} />
-      </div>
-      {/* 10 */}
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={PortifolioLimpeten.src} width={270} height={300} />
+      <div className='flex flex-row gap-x-3'>
+        <div className='object-cover'>
+          <img src={PortifolioLimpesix.src} className='w-[294px] h-[294px] rounded-sm' />
+        </div>
+        {/* 7 */}
+        <div className='object-cover'>
+          <img
+            src={PortifolioLimpeseven.src}
+            className='w-[294px] h-[294px] rounded-sm'
+          />
+        </div>
+        {/* 9 */}
+        <div className='object-cover'>
+          <img src={PortifolioLimpenine.src} className='w-[294px] h-[294px] rounded-sm' />
+        </div>
+        {/* 10 */}
+        <div className='object-cover'>
+          <img src={PortifolioLimpeten.src} className='w-[294px] h-[294px] rounded-sm' />
+        </div>
       </div>
       {/* 12 */}
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={PortifolioLimpetwelve.src} width={270} height={300} />
-      </div>
-      {/* 13 */}
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={PortifolioLimpethirteen.src} width={270} height={300} />
-      </div>
-      {/* 15 */}
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={PortifolioLimpefifteen.src} width={270} height={300} />
-      </div>
-      {/* 16 */}
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={PortifolioLimpesixteen.src} width={270} height={300} />
+      <div className='flex flex-row gap-x-3'>
+        <div className='object-cover'>
+          <img
+            src={PortifolioLimpetwelve.src}
+            className='w-[294px] h-[294px] rounded-sm'
+          />
+        </div>
+        {/* 13 */}
+        <div className='object-cover'>
+          <img
+            src={PortifolioLimpethirteen.src}
+            className='w-[294px] h-[294px] rounded-sm'
+          />
+        </div>
+        {/* 15 */}
+        <div className='object-cover'>
+          <img
+            src={PortifolioLimpefifteen.src}
+            className='w-[294px] h-[294px] rounded-sm'
+          />
+        </div>
+        {/* 16 */}
+        <div className='object-cover'>
+          <img
+            src={PortifolioLimpesixteen.src}
+            className='w-[294px] h-[294px] rounded-sm'
+          />
+        </div>
       </div>
       {/* 17 */}
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={PortifolioLimpeseventeen.src} width={270} height={300} />
-      </div>
-      {/* 18 */}
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={PortifolioLimpeeighteen.src} width={270} height={300} />
-      </div>
-      {/* 19 */}
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={PortifolioLimpenineteen.src} width={270} height={300} />
-      </div>
-       {/* 20 */}
-      <div className='gap-x-8 px-2 py-2'>
-        <Image src={PortifolioLimpetwenty.src} width={270} height={300} />
+      <div className='flex flex-row gap-x-3'>
+        <div className='object-cover'>
+          <img
+            src={PortifolioLimpeseventeen.src}
+            className='w-[294px] h-[294px] rounded-sm'
+          />
+        </div>
+        {/* 18 */}
+        <div className='object-cover'>
+          <img
+            src={PortifolioLimpeeighteen.src}
+            className='w-[294px] h-[294px] rounded-sm'
+          />
+        </div>
+        {/* 19 */}
+        <div className='object-cover'>
+          <img
+            src={PortifolioLimpenineteen.src}
+            className='w-[294px] h-[294px] rounded-sm'
+          />
+        </div>
+        {/* 20 */}
+        <div className='object-cover'>
+          <img
+            src={PortifolioLimpetwenty.src}
+            className='w-[294px] h-[294px] rounded-sm'
+          />
+        </div>
       </div>
     </div>
   );

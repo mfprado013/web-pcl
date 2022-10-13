@@ -30,7 +30,6 @@ export default function ContactForm() {
   });
 
   const onSubmit = useCallback(async (formData: FormValues) => {
-    console.log(formData);
     const { email, subject, message } = formData;
     const fullname = `${formData.name} ${formData.last_name}`;
 
