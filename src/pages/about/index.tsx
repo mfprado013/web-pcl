@@ -19,7 +19,7 @@ export default function About() {
       <SiteLayout title='sobre nós' withHeader withFooter navigation={navigation}>
         <main className='relative max-w-7xl mx-auto my-32'>
           <div>
-            <div className='bg-white'>
+            <div className='bg-white -mt-14'>
               <div className='mx-auto max-w-2xl py-24 px-4 sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8'>
                 <div className='grid grid-cols-1 items-center gap-y-16 gap-x-8 lg:grid-cols-2'>
                   <div>
@@ -84,7 +84,7 @@ const features = [
   {
     name: 'Serviço de Limpeza',
     description:
-      'Alocamos bancos, retroescavadeiras, guindadeste, para serviços de limpezas em rios, a Ponto Certo vem nessa area forte, pois estamos fazendo a limpeza do rio a mais de 10 anos e ainda continuamos a atuar nessa area e a cada ano estamos aprimorando equipamentos para que nosso serviços n tenha perga de qualidade'
+      'Alocamos barcos, escavadeira Hidráulica, guindadeste, para serviços de limpezas em rios, a Ponto Certo vem nessa area forte, pois estamos fazendo a limpeza do rio a mais de 10 anos e ainda continuamos a atuar nessa area e a cada ano estamos aprimorando equipamentos para que nosso serviços n tenha perga de qualidade'
   },
   {
     name: 'Serviços Agricolas',
