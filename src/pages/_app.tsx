@@ -4,7 +4,6 @@ import 'slick-carousel/slick/slick-theme.css';
 import type { AppProps } from 'next/app';
 
 import 'react-toastify/dist/ReactToastify.css';
-import '@tremor/react/dist/esm/tremor.css';
 
 import Whatsapp from '@/components/Common/Whatsapp/Whatsapp';
 import { ToastContainer } from 'react-toastify';
