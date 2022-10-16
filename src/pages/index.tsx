@@ -54,16 +54,18 @@ export default function Index() {
         {/* about */}
         <div className='max-w-7xl mx-auto mt-10'>
           <div className='flex justify-between mb-10'>
-            <div className='pl-10 pt-10 flex flex-col'>
-              <h2 className='break-words font-semibold text-4xl text-cinza-600'>
+            <div className='pl-10 pt-20 flex flex-col'>
+              <h2 className='break-words font-semibold text-2xl text-cinza-600'>
                 A Ponto Certo, empresa constituída em julho de 2014 na cidade de Guariba,
                 estado de São Paulo. Tem como sua principal atividade os{' '}
-                <span className='text-blue-600'>serviços de Alocações</span> de Guindastes
-                , Caminhões Muck, Limpesas de Rios e Serviços Agricolas.
+                <span className='font-bold uppercase text-gray-900'>
+                  serviços de Alocações
+                </span>{' '}
+                de Guindastes , Caminhões Muck, Limpesas de Rios e Serviços Agricolas.
               </h2>
               <div className='mt-6 mr-5 sm:mr-0 z-40'>
                 <Link href='/portifolio'>
-                  <a className='bg-blue-600 hover:bg-blue-500 text-gray-50 uppercase font-semibold text-center w-full sm:w-52 px-5 py-3 flex justify-center'>
+                  <a className='bg-gray-600 hover:bg-gray-500 text-gray-50 uppercase font-semibold text-center w-full sm:w-52 px-5 py-3 flex justify-center'>
                     saiba mais
                   </a>
                 </Link>
