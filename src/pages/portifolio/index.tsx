@@ -16,27 +16,27 @@ export default function Portifolio() {
       <SiteLayout title='portifolio' withHeader withFooter navigation={navigation}>
         <main className='relative max-w-7xl mx-auto my-32 '>
           <div className='bg-white -mt-14'>
-            <div className='mx-auto max-w-2xl py-24 px-4 sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8'>
-                <h1 className='pl-6 mt-2 text-sm font-semibold tracking-tight text-gray-900 sm:text-3xl sm:tracking-tight'>
-                  Serviços de Locações
-                </h1>
-              <div className='pt-4 px-6'>
+            <div className='max-w-7xl mx-auto px-10 py-5'>
+              <h1 className='mt-2 text-xl font-semibold tracking-tight text-gray-900 sm:text-3xl sm:tracking-tight'>
+                Serviços de Locações
+              </h1>
+              <div className='pt-4 '>
                 <PortifolioLocação />
               </div>
-              <div className='pt-6 px-10'>
-                <h1 className='mt-2 text-sm font-semibold tracking-tight text-gray-900 sm:text-3xl'>
+              <div className='pt-6 '>
+                <h1 className='mt-2 text-xl font-semibold tracking-tight text-gray-900 sm:text-3xl'>
                   Serviços de Limpeza em rios
                 </h1>
               </div>
-              <div className='pt-4 px-6'>
+              <div className='pt-4 '>
                 <PortifolioLimpeza />
               </div>
-              <div className='pt-6 px-10'>
-                <h1 className='mt-2 text-sm font-semibold tracking-tight text-gray-900 sm:text-3xl'>
+              <div className='pt-6 '>
+                <h1 className='mt-2 text-xl font-semibold tracking-tight text-gray-900 sm:text-3xl'>
                   Serviços Agricolas
                 </h1>
               </div>
-              <div className='pt-4 px-6'>
+              <div className='pt-4 '>
                 <PortifolioAgricola />
               </div>
             </div>
