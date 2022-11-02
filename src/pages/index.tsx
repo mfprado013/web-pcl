@@ -8,8 +8,9 @@ import SlideVideos from '@/components/Pages/Home/SlideVideos/SlideVide';
 
 const navigation = [
   { name: 'Inicio', href: '/', current: true },
-  { name: 'Sobre', href: '/about', current: false },
-  { name: 'Portifólio', href: '/portifolio', current: false },
+  { name: 'Navegação|Manutenção', href: '/navigation', current: false },
+  { name: 'Içamento|Contrução', href: '/construction', current: false },
+  { name: 'Plantio|Lavoura', href: '/planting', current: false },
   { name: 'Contato', href: '/contact', current: false }
 ];
 
