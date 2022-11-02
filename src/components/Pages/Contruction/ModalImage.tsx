@@ -1,6 +1,49 @@
 import { Fragment, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
-import { files } from '@/pages/construction/files';
+import File01 from '@/assets/images/contruction/pt1.jpeg';
+import File02 from '@/assets/images/contruction/pt2.jpeg';
+import File03 from '@/assets/images/contruction/pt3.jpeg';
+import File04 from '@/assets/images/contruction/pt6.jpeg';
+import File05 from '@/assets/images/contruction/pt7.jpeg';
+import File06 from '@/assets/images/contruction/pt8.jpeg';
+import File07 from '@/assets/images/contruction/pt9.jpeg';
+import File08 from '@/assets/images/contruction/pt10.jpeg';
+import { DocumentArrowDownIcon } from '@heroicons/react/24/outline';
+
+const files = [
+  {
+    id: 1,
+    source: File01.src
+  },
+  {
+    id: 2,
+    source: File02.src
+  },
+  {
+    id: 3,
+    source: File03.src
+  },
+  {
+    id: 4,
+    source: File04.src
+  },
+  {
+    id: 5,
+    source: File05.src
+  },
+  {
+    id: 6,
+    source: File06.src
+  },
+  {
+    id: 7,
+    source: File07.src
+  },
+  {
+    id: 8,
+    source: File08.src
+  }
+];
 
 export default function ModalImage({
   open,
