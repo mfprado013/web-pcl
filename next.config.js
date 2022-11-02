@@ -1,9 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js'],
   env:{
     baseURL: process.env.API
   },
+  eslint: {
+    dirs: ['src']
+  },
+  typescript: { ignoreBuildErrors: true },
 
   reactStrictMode: true,
   swcMinify: true,
