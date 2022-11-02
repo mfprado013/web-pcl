@@ -21,7 +21,7 @@ import File20 from '@/assets/images/navigation/pt48.jpeg';
 import File21 from '@/assets/images/navigation/pt55.jpeg';
 import { DocumentArrowDownIcon, DocumentIcon } from '@heroicons/react/24/outline';
 
-export const files = [
+const files = [
   {
     id: 1,
     source: File01.src
@@ -108,7 +108,7 @@ export const files = [
   }
 ];
 
-export const items = [
+const items = [
   {
     title: 'Download do PDF de Resumo',
     description: 'faça o download do pdf de resumo, para saber mais',
@@ -126,3 +126,5 @@ export const items = [
     nameFile: 'navegação-manutenção.pdf'
   }
 ];
+
+export { files, items };
