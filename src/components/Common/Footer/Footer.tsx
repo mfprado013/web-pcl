@@ -1,7 +1,7 @@
 const footerNavigation = {
   main: [
     { name: 'Navegação e Manutenção', href: '/navigation' },
-    { name: 'Içamento e Contrução', href: '/construction' },
+    { name: 'Içamento e Construção', href: '/construction' },
     { name: 'Plantio e Lavoura', href: '/planting' },
     { name: 'Contato', href: '/contact' }
   ],

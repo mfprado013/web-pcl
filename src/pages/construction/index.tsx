@@ -69,7 +69,7 @@ const items = [
 const navigation = [
   { name: 'Inicio', href: '/', current: false },
   { name: 'Navegação|Manutenção', href: '/navigation', current: false },
-  { name: 'Içamento|Contrução', href: '/construction', current: true },
+  { name: 'Içamento|Construção', href: '/construction', current: true },
   { name: 'Plantio|Lavoura', href: '/planting', current: false },
   { name: 'Contato', href: '/contact', current: false }
 ];
@@ -84,7 +84,7 @@ export default function Construction() {
               <div className='px-8 py-8'>
                 <div className='mb-5'>
                   <h3 className='text-2xl font-bold text-gray-700'>
-                    Içamento e Contrução
+                    Içamento e Construção
                   </h3>
                 </div>
                 <div className='mb-10'>
