@@ -134,7 +134,7 @@ const items = [
 const navigation = [
   { name: 'Inicio', href: '/', current: false },
   { name: 'Navegação|Manutenção', href: '/navigation', current: true },
-  { name: 'Içamento|Contrução', href: '/construction', current: false },
+  { name: 'Içamento|Construção', href: '/construction', current: false },
   { name: 'Plantio|Lavoura', href: '/planting', current: false },
   { name: 'Contato', href: '/contact', current: false }
 ];
