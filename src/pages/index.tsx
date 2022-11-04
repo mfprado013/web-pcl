@@ -5,6 +5,8 @@ import malePicture from '@/assets/images/male-worker.png';
 import Link from 'next/link';
 import CompaniesSlides from '@/components/Pages/Home/Carousel/CompaniesSlides';
 import SlideVideos from '@/components/Pages/Home/SlideVideos/SlideVide';
+import ModalPdf from '@/components/Pages/Home/ModalPdf';
+import { useState } from 'react';
 
 const navigation = [
   { name: 'Inicio', href: '/', current: true },
@@ -15,9 +17,17 @@ const navigation = [
 ];
 
 export default function Index() {
+  const [openModal, setOpenModal] = useState<boolean>(false);
+
+  const handleClose = () => {
+    setOpenModal(false);
+  };
   return (
     <>
       <SiteLayout title='home' withFooter withHeader navigation={navigation}>
+        <div className=' z-50'>
+          <ModalPdf open={openModal} close={handleClose} />
+        </div>
         <header>
           <div className='max-w-7xl mx-auto '>
             <div className='absolute z-10 mt-52 md:ml-[100px] lg:ml-[380px]'>
@@ -60,16 +70,18 @@ export default function Index() {
                 A Ponto Certo, empresa constituída em julho de 2014 na cidade de Guariba,
                 estado de São Paulo. Tem como sua principal atividade os{' '}
                 <span className='font-bold uppercase text-gray-900'>
-                  serviços de Alocações
+                  serviços de Locações
                 </span>{' '}
-                de Guindastes , Caminhões Muck, Limpesas de Rios e Serviços Agricolas.
+                de Guindastes , Caminhões Muck, Limpezas de Rios e Serviços Agricolas.
               </h2>
               <div className='mt-6 mr-5 sm:mr-0 z-40'>
-                <Link href='/portifolio'>
-                  <a className='bg-gray-600 hover:bg-gray-500 text-gray-50 uppercase font-semibold text-center w-full sm:w-52 px-5 py-3 flex justify-center'>
-                    saiba mais
-                  </a>
-                </Link>
+                <button
+                  type='button'
+                  onClick={() => setOpenModal(true)}
+                  className='bg-gray-600 hover:bg-gray-500 text-gray-50 uppercase font-semibold text-center w-full sm:w-52 px-5 py-3 flex justify-center z-10'
+                >
+                  saiba mais
+                </button>
               </div>
             </div>
             <img src={malePicture.src} alt='about-bussiness' className='hidden md:flex' />
@@ -81,8 +93,7 @@ export default function Index() {
             <div className='w-2/5 py-7 hidden sm:flex'>
               <span className='break-words font-semibold text-4xl text-cinza-50 pt-10'>
                 Bem Vindo! Aqui está um dos nossos principais serviços hoje, limpeza do
-                rio madeira em Porto Velho Rondonia, veja nossos esquipamento e equipe
-                atuando na limpeza
+                rio madeira em Porto Velho Rondonia, veja nossos esquipamento em atuação
               </span>
             </div>
             <div className='py-7 max-w-2xl mx-4 sm:mx-0'>

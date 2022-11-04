@@ -1,9 +1,11 @@
 const footerNavigation = {
   main: [
-    { name: 'Sobre', href: '/about' },
-    { name: 'Portifólio', href: '/portifolio' },
+    { name: 'Navegação e Manutenção', href: '/navigation' },
+    { name: 'Içamento e Contrução', href: '/construction' },
+    { name: 'Plantio e Lavoura', href: '/planting' },
     { name: 'Contato', href: '/contact' }
   ],
+
   social: [
     {
       name: 'Facebook',
